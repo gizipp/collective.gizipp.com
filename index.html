@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIZIPP Publishing | Engineering Happiness Across Journeys</title>
+    <style>
+        :root { --primary: #d35400; --dark: #111; --gray: #666; --light: #fafafa; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; margin: 0; color: #1a1a1a; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Nav & Hero */
+        .nav { padding: 25px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+        .logo { font-weight: 900; font-size: 1.4em; text-decoration: none; color: var(--dark); letter-spacing: -1px; }
+        .hero { text-align: center; padding: 100px 20px; background: var(--dark); color: white; }
+        .hero h1 { font-size: 3.5em; margin: 0; letter-spacing: -2px; }
+        .hero p { font-size: 1.2em; color: #aaa; max-width: 700px; margin: 20px auto; }
+
+        /* Services Section */
+        .services { padding: 80px 0; border-bottom: 1px solid #eee; }
+        .grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .service-card { padding: 30px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s; }
+        .service-card:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .service-card h3 { color: var(--primary); margin-top: 0; }
+
+        /* Catalog Section */
+        .catalog { padding: 80px 0; }
+        .imprint-header { margin-bottom: 40px; border-left: 5px solid var(--primary); padding-left: 20px; }
+        .book-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 60px; }
+        .book-card { text-decoration: none; color: inherit; }
+        .book-card img { width: 100%; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: 0.3s; }
+        .book-card:hover img { transform: scale(1.03); }
+        .book-info { margin-top: 15px; }
+        .author-label { font-size: 0.75em; text-transform: uppercase; color: var(--primary); font-weight: bold; letter-spacing: 1px; }
+        .book-title { font-size: 1em; font-weight: bold; margin: 5px 0; }
+
+        /* CTA */
+        .cta { text-align: center; padding: 100px 20px; background: var(--light); border-radius: 20px; margin: 40px 0; }
+        .btn { background: var(--primary); color: white; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; }
+        
+        footer { padding: 60px 0; text-align: center; border-top: 1px solid #eee; font-size: 0.9em; color: var(--gray); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="logo">GIZIPP<span style="color:var(--primary)">.</span>PUBLISHING</a>
+            <div style="text-align: right;"><small>A Division of GIZIPP Studios</small></div>
+        </nav>
+    </div>
+
+    <header class="hero">
+        <h1>Engineering Author Happiness.</h1>
+        <p>We help independent authors bridge the gap between local insights and global audiences through technology and thoughtful curation.</p>
+    </header>
+
+    <div class="container">
+        <section class="services">
+            <h2 style="text-align:center; margin-bottom: 50px;">Our Ecosystem</h2>
+            <div class="grid-services">
+                <div class="service-card">
+                    <h3>Global Distribution</h3>
+                    <p>Leveraging Amazon KDP, Apple Books, and Kobo to ensure your voice is heard in over 190 countries.</p>
+                </div>
+                <div class="service-card">
+                    <h3>AI-Enhanced Localization</h3>
+                    <p>Going beyond literal translation. We adapt tone, nuances, and cultural context for the global market.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Selective Curation</h3>
+                    <p>We work exclusively with works that offer profound value, practical playbooks, and unique perspectives.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="imprint-header">
+                <h2>The ENOUGH Journey & Pi Human</h2>
+                <p>Mindset, Self-Awareness, and Modern Skillsets by <b>Gil R. April</b></p>
+            </div>
+            <div class="book-grid">
+                <a href="#" class="book-card">
+                    <img src="cover-smarter.jpg" alt="I Should Be Smarter About This">
+                    <div class="book-info">
+                        <span class="author-label">Gil R. April</span>
+                        <div class="book-title">I Should Be Smarter About This</div>
+                    </div>
+                </a>
+                <a href="#" class="book-card">
+                    <img src="cover-happier.jpg" alt="I Should Be Happier By Now">
+                    <div class="book-info">
+                        <span class="author-label">Gil R. April</span>
+                        <div class="book-title">I Should Be Happier By Now</div>
+                    </div>
+                </a>
+                <a href="#" class="book-card">
+                    <img src="cover-pi.jpg" alt="From 0 to Pi">
+                    <div class="book-info">
+                        <span class="author-label">Gil R. April</span>
+                        <div class="book-title">From 0 to Pi</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="imprint-header">
+                <h2>The EverYAY Project</h2>
+                <p>Actionable Playbooks for Everyday Success by <b>Gilang R. Aprianto</b></p>
+            </div>
+            <div class="book-grid">
+                <a href="#" class="book-card">
+                    <img src="cover-focus.jpg" alt="The Digital Focus Project">
+                    <div class="book-info">
+                        <span class="author-label">Gilang R. Aprianto</span>
+                        <div class="book-title">The Digital Focus Project</div>
+                    </div>
+                </a>
+                <a href="#" class="book-card">
+                    <img src="cover-physio.jpg" alt="The Pediatric Physio Project">
+                    <div class="book-info">
+                        <span class="author-label">Gilang R. Aprianto</span>
+                        <div class="book-title">The Pediatric Physio Project</div>
+                    </div>
+                </a>
+                <a href="#" class="book-card">
+                    <img src="cover-potty.jpg" alt="The Potty Training Project">
+                    <div class="book-info">
+                        <span class="author-label">Gilang R. Aprianto</span>
+                        <div class="book-title">The Potty Training Project</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+           <section class="cta">
+            <h2>Ready to take your manuscript global?</h2>
+            <p style="max-width: 700px; margin: 0 auto; line-height: 1.8;">
+                GIZIPP Publishing is looking for high-impact <strong>non-fiction, practical playbooks, and life-management systems</strong>.
+                <br><br>
+                Whether it’s a career guide, parenting framework, or a personal growth journey, we help you turn your insights into a global success.<br> <br>
+            </p>            
+            <a href="mailto:publishing@gizipp.com" class="btn">Pitch to the Lab</a>
+            
+            <div style="margin-top: 30px; border-top: 1px solid #ddd; pt-20">
+                <p style="font-size: 0.85em; color: #777; margin-top: 20px;">
+                    Writing fiction? Our creative sister imprint, <strong>Glimmer Books</strong>, is where stories come to life. 
+                    <a href="https://glimmer.gizipp.com" style="color: var(--primary); text-decoration: none; font-weight: bold;">Visit Glimmer Books &rarr;</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 GIZIPP Studios. All rights reserved. <br> Powered by GIZIPP Creative Technology Lab.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
