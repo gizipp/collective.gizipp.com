@@ -1,188 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIZIPP Publishing | Self-Publishing, Without Doing It Alone.</title>
-    <style>
-        :root { --primary: #d35400; --dark: #111; --gray: #666; --light: #fafafa; }
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; margin: 0; color: #1a1a1a; line-height: 1.6; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        
-        /* Nav & Hero */
-        .nav { padding: 25px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
-        .logo { font-weight: 900; font-size: 1.4em; text-decoration: none; color: var(--dark); letter-spacing: -1px; }
-        .hero { text-align: center; padding: 100px 20px; background: var(--dark); color: white; }
-        .hero h1 { font-size: 3.5em; margin: 0; letter-spacing: -2px; }
-        .hero p { font-size: 1.2em; color: #aaa; max-width: 700px; margin: 20px auto; }
-
-        /* Services Section */
-        .services { padding: 80px 0; border-bottom: 1px solid #eee; }
-        .grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .service-card { padding: 30px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s; }
-        .service-card:hover { border-color: var(--primary); transform: translateY(-5px); }
-        .service-card h3 { color: var(--primary); margin-top: 0; }
-
-        /* Catalog Section */
-        .catalog { padding: 80px 0; }
-        .imprint-header { margin-bottom: 40px; border-left: 5px solid var(--primary); padding-left: 20px; }
-        .book-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 60px; }
-        .book-card { text-decoration: none; color: inherit; }
-        .book-card img { width: 100%; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: 0.3s; }
-        .book-card:hover img { transform: scale(1.03); }
-        .book-info { margin-top: 15px; }
-        .author-label { font-size: 0.75em; text-transform: uppercase; color: var(--primary); font-weight: bold; letter-spacing: 1px; }
-        .book-title { font-size: 1em; font-weight: bold; margin: 5px 0; }
-
-        /* CTA */
-        .cta { text-align: center; padding: 100px 20px; background: var(--light); border-radius: 20px; margin: 40px 0; }
-        .btn { background: var(--primary); color: white; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; }
-        
-        footer { padding: 60px 0; text-align: center; border-top: 1px solid #eee; font-size: 0.9em; color: var(--gray); }
-    </style>
+    <title>GIZIPP Press | Scaling Thoughtful Ideas for the Global Stage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        press: {
+                            orange: '#d35400',
+                            dark: '#0f0f0f',
+                            muted: '#777777',
+                            bg: '#fafafa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="bg-white text-press-dark font-sans antialiased">
 
-    <div class="container">
-        <nav class="nav">
-            <a href="#" class="logo">GIZIPP<span style="color:var(--primary)">.</span>PUBLISHING</a>
-            <div style="text-align: right;"><small>A Division of GIZIPP Studios</small></div>
-        </nav>
-    </div>
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center border-b border-gray-100">
+        <a href="#" class="inline-flex flex-col leading-none group">
+            <span class="font-black text-2xl md:text-3xl tracking-tighter uppercase flex items-center">
+                GIZIPP<span class="text-press-orange">.</span>
+            </span>
+            <span class="font-serif italic text-lg md:text-xl text-press-muted -mt-1 ml-1 group-hover:text-press-orange transition-colors">
+                Press
+            </span>
+        </a>
+        <div class="hidden md:block text-[10px] uppercase tracking-widest text-press-muted font-semibold">
+            A Division of GIZIPP Studios
+        </div>
+    </nav>
 
-    <header class="hero">
-        <h1>Self-Publishing, Without Doing It Alone.</h1>
-        <p>We help independent authors self-publish professionally — guiding the journey from manuscript to global digital publication with modern tools, thoughtful curation, and practical support.</p>
+    <header class="bg-press-dark text-white py-24 md:py-32 border-b border-press-orange/20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="font-serif text-4xl md:text-7xl leading-tight mb-8 italic">
+                Scaling Thoughtful Ideas <span class="text-press-orange">for the Global Stage.</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-4xl mx-auto font-light leading-relaxed">
+                GIZIPP Press is an independent digital-first publishing studio dedicated to transforming local insights into global intellectual assets through strategic curation and international distribution.
+            </p>
+        </div>
     </header>
 
-    <div class="container">
-        <section class="services">
-            <h2 style="text-align:center; margin-bottom: 50px;">The Publishing Ecosystem</h2>
-            <div class="grid-services">
-                <div class="service-card">
-                    <h3>Global Reach</h3>
-                    <p>Optimized for <strong>Amazon Kindle</strong> and wide digital distribution across Apple Books, MekarBooks Kobo, and other major global retailers.</p>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest text-[10px] text-press-orange mb-4">Idea-Driven</h4>
+                    <p class="text-sm text-press-muted leading-relaxed italic">Prioritizing intellectual curiosity and clarity of thought over market formulas.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Cultural Localization</h3>
-                    <p>Going beyond translation. We help adapt tone and cultural nuances so your <strong>unique voice</strong> resonates with readers around the world..</p>
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest text-[10px] text-press-orange mb-4">Independent Thinking</h4>
+                    <p class="text-sm text-press-muted leading-relaxed italic">Valuing unconventional insights that challenge assumptions and deepen conversations.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Premium Formatting</h3>
-                    <p>Professional EPUB and print-ready layouts crafted with Vellum, ensuring a flawless and world-class reading experience.</p>
-                </div>
-        
-                <div class="service-card">
-                    <h3>Market-Ready Covers</h3>
-                    <p>Professional cover designs tailored to international market standards — built to attract global readers.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Personal Growth Hub</h3>
-                    <p>Every author gets a dedicated <a href="https://mekarbooks.com" target="_blank"><strong>mekarbooks.com</strong></a> author page, integrated with newsletters to help build a loyal global readership.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Selective Imprint</h3>
-                    <p>Outstanding manuscripts may be invited to publish under <strong>GIZIPP Publishing</strong> or our imprints. Most authors self-publish independently, while selected works become part of our curated catalog.</p>
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest text-[10px] text-press-orange mb-4">Long-Term Value</h4>
+                    <p class="text-sm text-press-muted leading-relaxed italic">Focusing on books that remain relevant and meaningful years after publication.</p>
                 </div>
             </div>
-            <p style="text-align:center; max-width: 700px; margin: 0 auto; margin-top: 50px; color: var(--gray);">Built for serious independent authors who want to publish globally — without giving up ownership of their work.</p>
-        </section>
-        
-        <section class="cta" style="text-align: center; padding: 100px 20px; background: #fafafa; border-radius: 20px; margin: 40px 0;">
-            <h2>Ready to Publish Your Book Globally?</h2>
-            <p style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
-                Self-publishing doesn’t have to be a lonely journey.
-                <br><br>
-                <strong>GIZIPP</strong> helps independent authors navigate the path from manuscript to 
-                <strong>global digital publication</strong> — combining guidance, modern tools, and thoughtful support 
-                so your work can reach readers worldwide.
-                <br><br>
-                Whether you're writing a <strong>career guide, parenting framework, personal growth book,</strong> 
-                or a <strong>practical playbook</strong>, we help you prepare your work for the global marketplace.
-                <br><br>
-                Most authors publish independently. Some exceptional manuscripts may be invited to join the 
-                <strong>GIZIPP Publishing</strong> imprint.
+        </div>
+    </section>
+
+    <section class="py-24 bg-press-bg border-y border-gray-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="flex flex-col md:flex-row gap-16">
+                <div class="md:w-1/2">
+                    <h2 class="font-serif text-3xl italic mb-6">Our Mission.</h2>
+                    <p class="text-press-muted leading-relaxed">
+                        To publish thoughtful nonfiction that helps readers think more clearly about modern life, work, and personal growth. We make meaningful ideas accessible to a global audience while supporting authors who bring original perspectives to contemporary conversations.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="font-serif text-3xl italic mb-6">Editorial Focus.</h2>
+                    <ul class="space-y-3 text-sm font-semibold uppercase tracking-widest text-press-dark">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-press-orange mr-3"></span> Frameworks & Systems Thinking</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-press-orange mr-3"></span> Ideas & Modern Life</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-press-orange mr-3"></span> Personal Reflections & Essays</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-press-orange mr-3"></span> Practical Idea-Driven Books</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ecosystem" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="font-serif text-3xl md:text-4xl italic mb-4">The Publishing Ecosystem</h2>
+                <p class="text-press-muted max-w-2xl mx-auto text-sm">A digital-first infrastructure built to support independent writers at every stage of their publishing journey.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-10 border border-gray-200 rounded-3xl hover:border-press-orange hover:shadow-xl transition-all group">
+                    <div class="text-press-orange font-black mb-6 tracking-widest text-xs uppercase">01. MekarPad</div>
+                    <h3 class="text-2xl font-bold mb-4">Author Platform</h3>
+                    <p class="text-press-muted text-sm leading-relaxed mb-6">The primary entry point for creators. A space for production and publishing support—helping you navigate the path from raw manuscript to professionally prepared book.</p>
+                    <a href="https://mekarpad.com" target="_blank" class="text-press-orange font-bold text-xs uppercase tracking-widest hover:underline italic">Visit Platform &rarr;</a>
+                </div>
+
+                <div class="bg-white p-10 border border-gray-200 rounded-3xl hover:border-press-orange hover:shadow-xl transition-all group">
+                    <div class="text-press-orange font-black mb-6 tracking-widest text-xs uppercase">02. Mekarbooks</div>
+                    <h3 class="text-2xl font-bold mb-4">Global Distribution</h3>
+                    <p class="text-press-muted text-sm leading-relaxed mb-6">Our technical distribution layer. We manage the complex process of bringing your work to Amazon KDP, Apple Books, and major global digital retailers.</p>
+                    <a href="https://mekarbooks.com" target="_blank" class="text-press-orange font-bold text-xs uppercase tracking-widest hover:underline italic">Visit Platform &rarr;</a>
+                </div>
+
+                <a href="#contact" class="bg-press-dark text-white p-10 border border-press-orange rounded-3xl shadow-2xl relative overflow-hidden block hover:scale-[1.02] transition-transform text-left">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-press-orange/10 rounded-full blur-3xl"></div>
+                    <div class="text-press-orange font-black mb-6 tracking-widest text-xs uppercase">03. GIZIPP Press</div>
+                    <h3 class="text-2xl font-bold mb-4 italic font-serif text-press-orange">Curated Imprint</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">A selective space for high-impact nonfiction. We prioritize idea-driven publishing, clarity of thought, and long-term value for a global audience[cite: 212, 215, 220].</p>
+                    <span class="inline-block bg-press-orange text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest">By Invitation Only</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-press-bg border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="font-serif text-3xl mb-16 text-center italic">Selected Publications</h2>
+            
+            <div class="mb-24">
+                <div class="flex items-baseline mb-10 border-l-4 border-press-orange pl-6">
+                    <h3 class="text-2xl font-black uppercase tracking-tighter">The ENOUGH Journey</h3>
+                    <span class="ml-4 text-xs text-press-muted font-light uppercase tracking-widest">by Gil R. April</span>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <a href="#" class="group">
+                        <div class="rounded shadow-lg group-hover:shadow-2xl transition duration-500 overflow-hidden mb-6 bg-white border border-gray-100">
+                            <img src="cover/happier.jpg" alt="Happier" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="font-bold text-sm mb-1 group-hover:text-press-orange transition">I Should Be Happier By Now</h4>
+                        <p class="text-[10px] text-press-muted font-bold uppercase tracking-widest">Thoughtful Nonfiction</p>
+                    </a>
+                    </div>
+            </div>
+
+            <div>
+                <div class="flex items-baseline mb-10 border-l-4 border-press-orange pl-6">
+                    <h3 class="text-2xl font-black uppercase tracking-tighter">The EverYAY Project</h3>
+                    <span class="ml-4 text-xs text-press-muted font-light uppercase tracking-widest">by Gilang R. Aprianto</span>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center md:text-left">
+                    <a href="#" class="group">
+                        <div class="rounded shadow-lg group-hover:shadow-2xl transition duration-500 overflow-hidden mb-6 bg-white border border-gray-100">
+                            <img src="cover/potty.jpg" alt="Potty Training" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="font-bold text-sm mb-1 group-hover:text-press-orange transition text-left">The Potty Training Project</h4>
+                        <p class="text-[10px] text-press-muted font-bold uppercase tracking-widest text-left">Practical Playbook</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-white">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="font-serif text-4xl md:text-5xl italic mb-8 uppercase">Ready to Scale Your Ideas Globally?</h2>
+            <p class="text-press-muted text-lg leading-relaxed mb-12">
+                Whether you’re writing a career guide, a parenting framework, or a practical playbook, we help you prepare your work for the global marketplace while maintaining full ownership[cite: 7, 54, 157].
             </p>
-        
-            <br><br>
-        
-            <a href="mailto:publishing@gizipp.com" class="btn" style="background: #d35400; color: white; padding: 15px 45px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block;">
+            <a href="mailto:press@gizipp.com" class="px-12 py-5 bg-press-dark text-white rounded-full font-bold uppercase tracking-widest hover:bg-press-orange transition shadow-xl">
                 Start the Conversation
             </a>
-        
-            <div style="margin-top: 40px; border-top: 1px solid #ddd; padding-top: 25px;">
-                <p style="font-size: 0.85em; color: #777;">
-                    Writing fiction? Our creative sister imprint, <strong>Glimmr Tales</strong>, focuses on storytelling and imaginative worlds.
-                    <a href="https://glimmr.gizipp.com" style="color: #d35400; text-decoration: none; font-weight: bold;">
-                        Visit Glimmr Tales &rarr;
-                    </a>
+            
+            <div class="mt-24 pt-10 border-t border-gray-100">
+                <p class="text-xs text-press-muted uppercase tracking-widest font-bold">
+                    Writing fiction? Visit our sister imprint: 
+                    <a href="https://glimmrtales.com" class="text-press-orange hover:underline underline-offset-8 decoration-2 italic">Glimmr Tales &rarr;</a>
                 </p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="catalog">
-            <h2 style="text-align:center; margin-bottom: 50px;">Featured Books</h2>
-            <div class="imprint-header">
-                <h2>The ENOUGH Journey & Pi Human</h2>
-                <p>Mindset, Self-Awareness, and Modern Skillsets by <b>Gil R. April</b></p>
-            </div>
-            <div class="book-grid">
-                <a href="https://a.co/d/05LV8TES" target="_blank" class="book-card">
-                    <img src="cover/happier.jpg" alt="I Should Be Happier By Now">
-                    <div class="book-info">
-                        <span class="author-label">Gil R. April</span>
-                        <div class="book-title">I Should Be Happier By Now</div>
-                    </div>
-                </a>
-                <a href="https://a.co/d/03QE0lSO" target="_blank" class="book-card">
-                    <img src="cover/smarter.jpg" alt="I Should Be Smarter About This">
-                    <div class="book-info">
-                        <span class="author-label">Gil R. April</span>
-                        <div class="book-title">I Should Be Smarter About This</div>
-                    </div>
-                </a>
-                <a href="#" target="_blank" class="book-card">
-                    <img src="cover/pi.jpeg" alt="From 0 to Pi">
-                    <div class="book-info">
-                        <span class="author-label">Gil R. April</span>
-                        <div class="book-title">From 0 to Pi</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="imprint-header">
-                <h2>The EverYAY Project</h2>
-                <p>Actionable Playbooks for Everyday Success by <b>Gilang R. Aprianto</b></p>
-            </div>
-            <div class="book-grid">
-                <a href="https://a.co/d/066ZuGUj" target="_blank" class="book-card">
-                    <img src="cover/potty.jpg" alt="The Potty Training Project">
-                    <div class="book-info">
-                        <span class="author-label">Gilang R. Aprianto</span>
-                        <div class="book-title">The Potty Training Project</div>
-                    </div>
-                </a>
-                <a href="https://a.co/d/0enKq2rF" target="_blank" class="book-card">
-                    <img src="cover/focus.jpg" alt="The Digital Focus Project">
-                    <div class="book-info">
-                        <span class="author-label">Gilang R. Aprianto</span>
-                        <div class="book-title">The Digital Focus Project</div>
-                    </div>
-                </a>
-                <a href="https://a.co/d/02MjQ6D6" target="_blank" class="book-card">
-                    <img src="cover/physio.jpg" alt="The Pediatric Physio Project">
-                    <div class="book-info">
-                        <span class="author-label">Gilang R. Aprianto</span>
-                        <div class="book-title">The Pediatric Physio Project</div>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 GIZIPP Publishing. All rights reserved. <br> Powered by <a href="https://gizipp.com" target="_blank">GIZIPP Studios</a>.</p>
+    <footer class="py-12 bg-press-bg border-t border-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-[10px] text-press-muted font-bold uppercase tracking-[0.5em] mb-4">Scaling Local Insights for the Global Stage</p>
+            <p class="text-xs text-press-muted leading-loose">
+                &copy; 2026 GIZIPP Press. All rights reserved. <br> 
+                An Independent Digital-First Press. Powered by <a href="https://gizipp.com" class="text-press-dark font-bold hover:text-press-orange transition">GIZIPP Studios</a>.
+            </p>
         </div>
     </footer>
 
